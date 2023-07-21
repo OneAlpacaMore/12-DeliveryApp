@@ -1,0 +1,22 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as mixin;
+
+.header {
+    display: flex;
+    flex-direction: column;
+    padding: var.$separacion 0;
+    align-items: center;
+    @include mixin.desktop { 
+        flex-direction: row;
+        justify-content: space-between;
+       
+     }
+    &__logo {
+        width: 30rem;
+        margin-bottom: 5rem;
+        @include mixin.desktop {
+            margin-bottom: 0;
+        }
+    }
+
+}
