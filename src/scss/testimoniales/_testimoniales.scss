@@ -1,0 +1,6 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as mixin;
+
+.testimoniales {
+    padding: var.$separacion 0;
+}
