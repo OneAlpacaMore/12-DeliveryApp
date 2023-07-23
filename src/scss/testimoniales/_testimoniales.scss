@@ -3,4 +3,14 @@
 
 .testimoniales {
     padding: var.$separacion 0;
+
+    &__heading {
+        text-align: center;
+    }
+
+    &__grid {
+        @include mixin.tablet {
+            @include mixin.grid(5, 2rem);
+        }
+    }
 }
