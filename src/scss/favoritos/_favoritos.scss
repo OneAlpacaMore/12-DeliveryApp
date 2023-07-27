@@ -1,0 +1,18 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as mixin;
+
+.favoritos {
+    background-color: var.$grisClaro;
+    padding: var.$separacion 0;
+
+    &__heading {
+        text-align: center;
+        color: var.$secundario;
+    }
+
+    &__grid {
+        @include mixin.tablet { 
+            @include mixin.grid(2, 4rem);
+         }
+    }
+}
