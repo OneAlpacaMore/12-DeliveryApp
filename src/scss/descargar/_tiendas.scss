@@ -1,0 +1,31 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as mixin;
+
+.tiendas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__heading {
+        text-align: center;
+        margin: 2rem 0 0 0;
+        color: var.$secundario;
+    }
+
+    &__texto {
+        text-align: center;
+        margin-bottom: 3rem
+    }
+
+    &__grid {
+        @include mixin.grid(2, 2rem);
+    }
+
+    &__enlace {
+        transition-property: transform;
+        transition-duration: 300ms;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
